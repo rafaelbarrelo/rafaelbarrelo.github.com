@@ -1,0 +1,184 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #1d1d1d;
+  /*
+  	url('../images/bg.jpg') no-repeat fixed; /*200px 70px;*
+  */
+  color: #ccc;
+}
+
+a {
+  	color: #666;
+}
+
+a:hover{
+	color: #80bd01;
+	text-decoration: none;
+}
+
+/*==================
+	CONTAINER
+==================*/
+.container{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*==================
+	EFEITO
+==================*/
+/* Outline Outward */
+.outline-outward {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+}
+.outline-outward:before {
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  content: '';
+  position: absolute;
+  border: #ccc solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.outline-outward:hover:before, 
+.outline-outward:focus:before, 
+.outline-outward:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  border: #80bd01 solid 4px;
+}
+
+.grow {
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*==================
+	FOTO
+==================*/
+.foto{
+	background: url('../images/avatar.jpg') no-repeat; 
+	background-size: 150px 150px;
+	height: 150px;
+	width: 150px;	
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+  	-moz-border-radius: 90px;
+  	cursor: pointer;
+}
+
+/*==================
+	NOME E PROFISSAO
+==================*/
+.dados-up{
+	text-align: center;
+	margin: 20px;
+}
+
+/*==================
+	CONTEUDO
+==================*/
+.dados-down{
+	width: 100%;
+	height: 330px;
+	background-color: #303030;
+}
+
+.central{	
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+
+.descricao{
+	width: 400px;
+	padding: 10px 20px 0px 20px;
+}
+
+.texto{
+	width: 400px;
+	float: left;
+	padding: 10px 20px 10px 20px;
+}
+.left{
+	/*background-color: red;*/
+}
+
+.right{
+	/*background-color: blue;*/
+}
+.titulo{
+	color: #80bd01
+}
+.lista{
+	color: #ccc;
+}
+
+/*==================
+	CONTATOS
+==================*/
+.contatos{
+	width: 100%;
+	height: 100px;
+	background-color: #373737;
+	padding: 5px;
+	color: #666;
+	text-align: center;
+}
+
+.links{
+	padding: 10px;
+	display: block;
+	font-size: 13px;
+}
+.links li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+/*==================
+	RODAPE
+==================*/
+.panel-footer{
+	color: #555;
+	border: none;
+	background: #1d1d1d;
+	text-align: right;
+	font-size: 9px;
+   	width: 100%;
+   	padding-right: 40px;
+}
+
+
+
